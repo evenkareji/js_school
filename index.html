@@ -11,18 +11,18 @@
     <script>
       /**
        * 即時関数*/
-
       function WidthHeight() {
         const body = document.querySelector('body')
-        let colorRed = 'red'
+        body.style.backgroundColor = '#000'
 
         let body_width = document.documentElement.clientWidth
 
         let body_height = document.documentElement.clientHeight
 
-        const pole = (document.querySelector(
-          'h1',
-        ).innerHTML = `ブラウザの横幅は${body_width}で、縦幅は${body_height}です`)
+        const pole = document.querySelector('h1')
+        pole.style.color = '#fff'
+        const p =
+          (pole.innerHTML = `ブラウザの横幅は${body_width}で、縦幅は${body_height}です`)
       }
       //   WidthHeight()
       let count = 1
